@@ -1,0 +1,202 @@
+﻿[
+    {
+        "ID":  "MH-01",
+        "Question":  "Which products are affected by CVE-2026-21428, what affected-version boundary is documented, and what vulnerability behavior explains the risk?",
+        "GeneratedAnswer":  "Fixed-version verification based on each CVE\u0027s own description:\n\n- CVE-2026-21428: explicitly stated fixed version 0.30.0. [S1]\n\nImportant: \u0027No explicitly confirmed fixed version\u0027 means the description did not confirm one. It does not prove that no fix exists.",
+        "ReferenceAnswer":  null,
+        "RequiredEvidence":  "CVE-to-product relationship; Affected version configuration; Source-backed vulnerability description",
+        "RetrievedChunks":  "CVE-2026-21428-desc-1",
+        "GraphNodes":  "CVE-2026-21428, cpp-httplib",
+        "Citations":  "CVE-2026-21428 — https://nvd.nist.gov/vuln/detail/CVE-2026-21428"
+    },
+    {
+        "ID":  "MH-02",
+        "Question":  "For CVE-2026-21428, how do the affected software, vulnerable version range, and documented fixed-version boundary fit together?",
+        "GeneratedAnswer":  "Affected-version ranges from the connected product records:\n- CVE-2026-21428: CVSS 7.7, HIGH; cpp-httplib: \u003c 0.30.0. [S1]",
+        "ReferenceAnswer":  null,
+        "RequiredEvidence":  "Affected software identity; Vulnerable version range; Authoritative fixed-version evidence",
+        "RetrievedChunks":  "CVE-2026-21428-desc-1",
+        "GraphNodes":  "CVE-2026-21428, cpp-httplib",
+        "Citations":  "CVE-2026-21428 — https://nvd.nist.gov/vuln/detail/CVE-2026-21428"
+    },
+    {
+        "ID":  "MH-03",
+        "Question":  "Which vulnerabilities in the graph affect cpp-httplib, and how do their affected-version ranges and descriptions differ?",
+        "GeneratedAnswer":  "Affected-version ranges from the connected product records:\n- CVE-2026-21428: CVSS 7.7, HIGH; cpp-httplib: \u003c 0.30.0. [S1]\n- CVE-2026-22776: CVSS 8.7, HIGH; cpp-httplib: \u003c 0.30.1. [S2]\n- CVE-2026-28434: CVSS 5.3, MEDIUM; cpp-httplib: \u003c 0.35.0. [S3]\n- CVE-2026-28435: CVSS 7.5, HIGH; cpp-httplib: \u003c 0.35.0. [S4]\n- CVE-2026-29076: CVSS 5.9, MEDIUM; cpp-httplib: \u003c 0.37.0. [S5]\n- CVE-2026-31870: CVSS 7.5, HIGH; cpp-httplib: \u003c 0.37.1. [S6]\n- CVE-2026-32627: CVSS 8.7, HIGH; cpp-httplib: \u003c 0.37.2. [S7]\n- CVE-2026-33745: CVSS 7.4, HIGH; cpp-httplib: \u003c 0.39.0. [S8]\n- CVE-2026-34441: CVSS 4.8, MEDIUM; cpp-httplib: \u003c 0.40.0. [S9]\n- CVE-2026-45352: CVSS 5.3, MEDIUM; cpp-httplib: \u003c 0.43.4. [S10]\n- CVE-2026-45372: CVSS 9.9, CRITICAL; cpp-httplib: \u003c 0.44.0. [S11]\n- CVE-2026-46527: CVSS 8.7, HIGH; cpp-httplib: \u003c 0.44.0. [S12]\n- CVE-2026-54919: CVSS 7.4, HIGH; cpp-httplib: \u003e= 0.31.0 and \u003c 0.47.0. [S13]",
+        "ReferenceAnswer":  null,
+        "RequiredEvidence":  "Canonical software identity; Distinct CVE relationships; Version ranges and descriptions for each CVE",
+        "RetrievedChunks":  "CVE-2026-21428-desc-1, CVE-2026-22776-desc-1, CVE-2026-28434-desc-1, CVE-2026-28435-desc-1, CVE-2026-29076-desc-1, CVE-2026-31870-desc-1, CVE-2026-32627-desc-1, CVE-2026-33745-desc-1, CVE-2026-34441-desc-1, CVE-2026-45352-desc-1, CVE-2026-45372-desc-1, CVE-2026-46527-desc-1, CVE-2026-54919-desc-1",
+        "GraphNodes":  "CVE-2026-21428, cpp-httplib, CVE-2026-22776, cpp-httplib, CVE-2026-28434, cpp-httplib, CVE-2026-28435, cpp-httplib, CVE-2026-29076, cpp-httplib, CVE-2026-31870, cpp-httplib, CVE-2026-32627, cpp-httplib, CVE-2026-33745, cpp-httplib, CVE-2026-34441, cpp-httplib, CVE-2026-45352, cpp-httplib, CVE-2026-45372, cpp-httplib, CVE-2026-46527, cpp-httplib, CVE-2026-54919, cpp-httplib",
+        "Citations":  "CVE-2026-21428 — https://nvd.nist.gov/vuln/detail/CVE-2026-21428; CVE-2026-22776 — https://nvd.nist.gov/vuln/detail/CVE-2026-22776; CVE-2026-28434 — https://nvd.nist.gov/vuln/detail/CVE-2026-28434; CVE-2026-28435 — https://nvd.nist.gov/vuln/detail/CVE-2026-28435; CVE-2026-29076 — https://nvd.nist.gov/vuln/detail/CVE-2026-29076; CVE-2026-31870 — https://nvd.nist.gov/vuln/detail/CVE-2026-31870; CVE-2026-32627 — https://nvd.nist.gov/vuln/detail/CVE-2026-32627; CVE-2026-33745 — https://nvd.nist.gov/vuln/detail/CVE-2026-33745; CVE-2026-34441 — https://nvd.nist.gov/vuln/detail/CVE-2026-34441; CVE-2026-45352 — https://nvd.nist.gov/vuln/detail/CVE-2026-45352; CVE-2026-45372 — https://nvd.nist.gov/vuln/detail/CVE-2026-45372; CVE-2026-46527 — https://nvd.nist.gov/vuln/detail/CVE-2026-46527; CVE-2026-54919 — https://nvd.nist.gov/vuln/detail/CVE-2026-54919"
+    },
+    {
+        "ID":  "MH-04",
+        "Question":  "For CVE-2026-0544, which product and version configuration are associated with the vulnerability, and what CVSS information is recorded?",
+        "GeneratedAnswer":  "Fixed-version verification based on each CVE\u0027s own description:\n\n- CVE-2026-0544: no explicitly confirmed fixed version found in the description. [S1]\n\nImportant: \u0027No explicitly confirmed fixed version\u0027 means the description did not confirm one. It does not prove that no fix exists.",
+        "ReferenceAnswer":  null,
+        "RequiredEvidence":  "CVE-to-product relationship; Version configuration; CVSS score and severity source fields",
+        "RetrievedChunks":  "CVE-2026-0544-desc-1",
+        "GraphNodes":  "CVE-2026-0544, school management system",
+        "Citations":  "CVE-2026-0544 — https://nvd.nist.gov/vuln/detail/CVE-2026-0544"
+    },
+    {
+        "ID":  "MH-05",
+        "Question":  "Compare CVE-2026-21428 with CVE-2026-0544: which affects which product, which has the higher CVSS score, and how do their documented impacts differ?",
+        "GeneratedAnswer":  "Based on the graph evidence, here are the answers to the user\u0027s question:\n\n1. Affects product: CVE-2026-21428 affects the product \u0027cpp-httplib\u0027 by yhirose, while CVE-2026-0544 does not have a specified product.\n2. CVSS score: CVE-2026-21428 has a CVSS score of 7.7, while the CVSS score for CVE-2026-0544 is not specified.\n3. Documented impact: \n   - CVE-2026-21428 allows attackers to add extra headers, modify request body unexpectedly, and trigger an SSRF attack. When combined with a server that supports http1.1 pipelining, this can be used for server side request forgery (SSRF).\n   - The documented impact for CVE-2026-0544 is not specified.\n\nNote: The fixed version for CVE-2026-21428 is explicitly stated as 0.30.0, while the fixed version for CVE-2026-0544 is not confirmed.",
+        "ReferenceAnswer":  null,
+        "RequiredEvidence":  "Product relationship for each CVE; CVSS scores; Source-backed impact descriptions",
+        "RetrievedChunks":  "CVE-2026-21428-desc-1",
+        "GraphNodes":  "CVE-2026-21428, cpp-httplib",
+        "Citations":  "CVE-2026-21428 — https://nvd.nist.gov/vuln/detail/CVE-2026-21428"
+    },
+    {
+        "ID":  "MH-06",
+        "Question":  "Which vulnerabilities in our graph affect Apache Log4j2, and what evidence connects each CVE to that software?",
+        "GeneratedAnswer":  "The vulnerabilities that affect Apache Log4j2 are:\n\n1. CVE-2021-44228: Apache Log4j2 Remote Code Execution Vulnerability\n   - Evidence: [S1] - The NVD description states that JNDI features do not protect against attacker-controlled JNDI-related endpoints, allowing for remote code execution in Apache Log4j2 versions 2.0-beta9 through 2.15.0 (excluding security releases).\n\n2. CVE-2021-45046: Apache Log4j2 Deserialization of Untrusted Data Vulnerability\n   - Evidence: [S2] - The KEV description states that Apache Log4j2 contains a deserialization of untrusted data vulnerability due to the incomplete fix of CVE-2021-44228, which affects certain non-default configurations.",
+        "ReferenceAnswer":  null,
+        "RequiredEvidence":  "Canonical Apache Log4j2 identity; CVE-to-software relationships; Supporting source evidence",
+        "RetrievedChunks":  "CVE-2021-44228-desc-1, CVE-2021-45046-desc-1",
+        "GraphNodes":  "CVE-2021-44228, Log4j2, CVE-2021-45046, Log4j2",
+        "Citations":  "CVE-2021-44228 — https://nvd.nist.gov/vuln/detail/CVE-2021-44228; CVE-2021-45046 — https://nvd.nist.gov/vuln/detail/CVE-2021-45046"
+    },
+    {
+        "ID":  "MH-07",
+        "Question":  "For CVE-2021-44228, how does the affected software relate to the recorded CVSS score and the documented security impact?",
+        "GeneratedAnswer":  "According to the graph evidence, the affected software is Apache Log4j2, and it is related to the recorded CVSS score of 10.0 and the documented security impact of CRITICAL severity.\n\nThe CVSS score of 10.0 indicates a high severity vulnerability, and the CRITICAL severity classification further emphasizes the potential impact of this vulnerability on the affected software.",
+        "ReferenceAnswer":  null,
+        "RequiredEvidence":  "Affected software relationship; CVSS record; Description or advisory evidence",
+        "RetrievedChunks":  "CVE-2021-44228-desc-1",
+        "GraphNodes":  "CVE-2021-44228, Log4j2",
+        "Citations":  "CVE-2021-44228 — https://nvd.nist.gov/vuln/detail/CVE-2021-44228"
+    },
+    {
+        "ID":  "MH-08",
+        "Question":  "Which affected software is associated with the highest-scoring CVEs in our dataset, and what documented impacts distinguish those vulnerabilities?",
+        "GeneratedAnswer":  "Vulnerabilities ranked by CVSS score (ties are ordered by CVE ID):\n\n1. CVE-2026-0071: CRITICAL (CVSS score: 10.0). In SettingsLib, there is a possible missing permission check due to a logic error in the code. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation. [S5]\n\n2. CVE-2026-0068: CRITICAL (CVSS score: 10.0). In createSessionInternal of PackageInstallerService.java, there is a possible method to remove a DPC app from a managed device without DO consent due to desync from persistence. This could lead to local escalation of privilege if a user can install a malicious app with no additional execution privileges needed. User interaction is needed for exploitation. [S4]\n\n3. CVE-2026-0064: CRITICAL (CVSS score: 10.0). In multiple places, there is a possible persistent denial of service due to resource exhaustion. This could lead to local denial of service with no additional execution privileges needed. User interaction is not needed for exploitation. [S3]\n\n4. CVE-2026-0063: CRITICAL (CVSS score: 10.0). In setAllowedCarriers of PhoneInterfaceManager.java, there is a possible way to disable carrier restrictions due to a logic error in the code. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation. [S2]\n\n5. CVE-2021-44228: CRITICAL (CVSS score: 10.0). Apache Log4j2 contains a vulnerability where JNDI features do not protect against attacker-controlled JNDI-related endpoints, allowing for remote code execution. [S1]",
+        "ReferenceAnswer":  null,
+        "RequiredEvidence":  "Maximum CVSS score in the selected dataset; Associated CVEs and products; Impact descriptions",
+        "RetrievedChunks":  "CVE-2021-44228-desc-1, CVE-2026-0063-desc-1, CVE-2026-0064-desc-1, CVE-2026-0068-desc-1, CVE-2026-0071-desc-1",
+        "GraphNodes":  "CVE-2021-44228, Log4j2, CVE-2026-0063, android, CVE-2026-0064, android, CVE-2026-0068, android, CVE-2026-0071, android",
+        "Citations":  "CVE-2021-44228 — https://nvd.nist.gov/vuln/detail/CVE-2021-44228; CVE-2026-0063 — https://nvd.nist.gov/vuln/detail/CVE-2026-0063; CVE-2026-0064 — https://nvd.nist.gov/vuln/detail/CVE-2026-0064; CVE-2026-0068 — https://nvd.nist.gov/vuln/detail/CVE-2026-0068; CVE-2026-0071 — https://nvd.nist.gov/vuln/detail/CVE-2026-0071"
+    },
+    {
+        "ID":  "MH-09",
+        "Question":  "For a selected HIGH or CRITICAL CVE, which software is affected, what is its CVSS score, and what does the vulnerability description say an attacker can do?",
+        "GeneratedAnswer":  "For CVE-2026-61325, the affected software is Oracle Advanced Benefits, and its CVSS score is 7.6. The vulnerability description states that an attacker with high privileged access via HTTP can compromise Oracle Advanced Benefits, resulting in unauthorized access to critical data or complete access to all Oracle Advanced Benefits accessible data.\n\nFor CVE-2026-46979, the affected software is PeopleSoft Enterprise CS Campus Community, and its CVSS score is 6.5. The vulnerability description states that an attacker with high privileged access via HTTPS can compromise PeopleSoft Enterprise CS Campus Community, resulting in unauthorized creation, deletion, or modification access to critical data or all PeopleSoft Enterprise CS Campus Community accessible data.",
+        "ReferenceAnswer":  null,
+        "RequiredEvidence":  "Selected CVE identifier; Affected software relationship; CVSS score and severity; Description evidence",
+        "RetrievedChunks":  "",
+        "GraphNodes":  "CVE-2026-61325, advanced benefits, CVE-2026-60605, peoplesoft enterprise campus software campus community, CVE-2026-46979, peoplesoft enterprise campus software campus community, CVE-2026-21571, bamboo, CVE-2026-21580",
+        "Citations":  "CVE-2026-61325 — https://nvd.nist.gov/vuln/detail/CVE-2026-61325; CVE-2026-60605 — https://nvd.nist.gov/vuln/detail/CVE-2026-60605; CVE-2026-46979 — https://nvd.nist.gov/vuln/detail/CVE-2026-46979; CVE-2026-21571 — https://nvd.nist.gov/vuln/detail/CVE-2026-21571; CVE-2026-21580 — https://nvd.nist.gov/vuln/detail/CVE-2026-21580"
+    },
+    {
+        "ID":  "MH-10",
+        "Question":  "Which products have multiple associated CVEs with different severity levels, and what evidence supports each product-CVE-severity combination?",
+        "GeneratedAnswer":  "Vulnerabilities ranked by CVSS score (ties are ordered by CVE ID):\n\n1. CVE-2026-0071: CRITICAL (CVSS score: 10.0). In SettingsLib, there is a possible missing permission check due to a logic error in the code. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation. [S5]\n\n2. CVE-2026-0068: CRITICAL (CVSS score: 10.0). In createSessionInternal of PackageInstallerService.java, there is a possible method to remove a DPC app from a managed device without DO consent due to desync from persistence. This could lead to local escalation of privilege if a user can install a malicious app with no additional execution privileges needed. User interaction is needed for exploitation. [S4]\n\n3. CVE-2026-0064: CRITICAL (CVSS score: 10.0). In multiple places, there is a possible persistent denial of service due to resource exhaustion. This could lead to local denial of service with no additional execution privileges needed. User interaction is not needed for exploitation. [S3]\n\n4. CVE-2026-0063: CRITICAL (CVSS score: 10.0). In setAllowedCarriers of PhoneInterfaceManager.java, there is a possible way to disable carrier restrictions due to a logic error in the code. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation. [S2]\n\n5. CVE-2021-44228: CRITICAL (CVSS score: 10.0). Apache Log4j2 contains a vulnerability where JNDI features do not protect against attacker-controlled JNDI-related endpoints, allowing for remote code execution. [S1]",
+        "ReferenceAnswer":  null,
+        "RequiredEvidence":  "Product-to-CVE associations; Distinct CVE counts; Severity data; Source evidence",
+        "RetrievedChunks":  "CVE-2021-44228-desc-1, CVE-2026-0063-desc-1, CVE-2026-0064-desc-1, CVE-2026-0068-desc-1, CVE-2026-0071-desc-1",
+        "GraphNodes":  "CVE-2021-44228, Log4j2, CVE-2026-0063, android, CVE-2026-0064, android, CVE-2026-0068, android, CVE-2026-0071, android",
+        "Citations":  "CVE-2021-44228 — https://nvd.nist.gov/vuln/detail/CVE-2021-44228; CVE-2026-0063 — https://nvd.nist.gov/vuln/detail/CVE-2026-0063; CVE-2026-0064 — https://nvd.nist.gov/vuln/detail/CVE-2026-0064; CVE-2026-0068 — https://nvd.nist.gov/vuln/detail/CVE-2026-0068; CVE-2026-0071 — https://nvd.nist.gov/vuln/detail/CVE-2026-0071"
+    },
+    {
+        "ID":  "MH-11",
+        "Question":  "For a product associated with several CVEs, which vulnerability has the highest CVSS score, and how does its impact compare with the other vulnerabilities affecting that product?",
+        "GeneratedAnswer":  "Vulnerabilities ranked by CVSS score (ties are ordered by CVE ID):\n\n1. CVE-2026-0071: CRITICAL (CVSS score: 10.0). In SettingsLib, there is a possible missing permission check due to a logic error in the code. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation. [S5]\n\n2. CVE-2026-0068: CRITICAL (CVSS score: 10.0). In createSessionInternal of PackageInstallerService.java, there is a possible method to remove a DPC app from a managed device without DO consent due to desync from persistence. This could lead to local escalation of privilege if a user can install a malicious app with no additional execution privileges needed. User interaction is needed for exploitation. [S4]\n\n3. CVE-2026-0064: CRITICAL (CVSS score: 10.0). In multiple places, there is a possible persistent denial of service due to resource exhaustion. This could lead to local denial of service with no additional execution privileges needed. User interaction is not needed for exploitation. [S3]\n\n4. CVE-2026-0063: CRITICAL (CVSS score: 10.0). In setAllowedCarriers of PhoneInterfaceManager.java, there is a possible way to disable carrier restrictions due to a logic error in the code. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation. [S2]\n\n5. CVE-2021-44228: CRITICAL (CVSS score: 10.0). Apache Log4j2 contains a vulnerability where JNDI features do not protect against attacker-controlled JNDI-related endpoints, allowing for remote code execution. [S1]",
+        "ReferenceAnswer":  null,
+        "RequiredEvidence":  "Selected product; Associated CVEs; CVSS scores; Descriptions for comparison",
+        "RetrievedChunks":  "CVE-2021-44228-desc-1, CVE-2026-0063-desc-1, CVE-2026-0064-desc-1, CVE-2026-0068-desc-1, CVE-2026-0071-desc-1",
+        "GraphNodes":  "CVE-2021-44228, Log4j2, CVE-2026-0063, android, CVE-2026-0064, android, CVE-2026-0068, android, CVE-2026-0071, android",
+        "Citations":  "CVE-2021-44228 — https://nvd.nist.gov/vuln/detail/CVE-2021-44228; CVE-2026-0063 — https://nvd.nist.gov/vuln/detail/CVE-2026-0063; CVE-2026-0064 — https://nvd.nist.gov/vuln/detail/CVE-2026-0064; CVE-2026-0068 — https://nvd.nist.gov/vuln/detail/CVE-2026-0068; CVE-2026-0071 — https://nvd.nist.gov/vuln/detail/CVE-2026-0071"
+    },
+    {
+        "ID":  "MH-12",
+        "Question":  "Which CVEs share an affected product, and which source-backed facts show that the vulnerabilities are separate issues rather than duplicate records?",
+        "GeneratedAnswer":  "Based on the graph evidence, the following CVEs share an affected product:\n\n* CVE-2026-47882 and CVE-2026-66908 are both related to Spring Tools and Apache Camel.\n* CVE-2026-47882 is related to Spring Tools for Eclipse, while CVE-2026-66908 is related to Apache Camel.\n* CVE-2026-63317 is related to Apache OpenNLP.\n* CVE-2026-82355 is related to Apache Airflow.\n\nThe following source-backed facts show that the vulnerabilities are separate issues rather than duplicate records:\n\n* The descriptions of the CVEs provide distinct information about the vulnerabilities, indicating that they are separate issues.\n* The affected products and versions listed for each CVE are different, further supporting the conclusion that they are separate issues.\n* The CVSS scores and severities for each CVE are also different, indicating that they have distinct impact and risk profiles.\n\nTherefore, while some of the CVEs share an affected product, the vulnerabilities themselves appear to be separate issues.",
+        "ReferenceAnswer":  null,
+        "RequiredEvidence":  "Shared product relationship; Distinct CVE identifiers; Differing source descriptions or advisories",
+        "RetrievedChunks":  "",
+        "GraphNodes":  "CVE-2026-47882, spring tools, CVE-2026-66908, camel, CVE-2026-89648, CVE-2026-63317, opennlp, opennlp, opennlp, opennlp, CVE-2026-82355, airflow, airflow",
+        "Citations":  "CVE-2026-47882 — https://nvd.nist.gov/vuln/detail/CVE-2026-47882; CVE-2026-66908 — https://nvd.nist.gov/vuln/detail/CVE-2026-66908; CVE-2026-89648 — https://nvd.nist.gov/vuln/detail/CVE-2026-89648; CVE-2026-63317 — https://nvd.nist.gov/vuln/detail/CVE-2026-63317; CVE-2026-82355 — https://nvd.nist.gov/vuln/detail/CVE-2026-82355"
+    },
+    {
+        "ID":  "MH-13",
+        "Question":  "For two CVEs affecting the same product, which has the higher CVSS score, what is the score difference, and how do the documented impacts differ?",
+        "GeneratedAnswer":  "The two CVEs affecting the same product are CVE-2026-74691 and CVE-2026-80819.\n\nThe CVSS score for CVE-2026-74691 is 8.8, while the CVSS score for CVE-2026-80819 is 7.2. The score difference is 1.6.\n\nThe documented impacts differ as follows:\n\n- CVE-2026-74691: The vulnerability in the Linux kernel allows a remote attacker to cause a partial denial of service (partial DOS) of the Thunderbolt controller. The attacker can also drain the hop, causing the controller to take down the XDomain control channel, after which the peer node is gone and only a power cycle brings the controller back.\n- CVE-2026-80819: The vulnerability in the Linux kernel allows a remote attacker to cause a general protection fault when sending a DISC packet on a deferred setup accept. The attacker can also clear the session while leaving the RFCOMM_DEFER_SETUP bit set, allowing them to dereference a NULL session.",
+        "ReferenceAnswer":  null,
+        "RequiredEvidence":  "Two CVEs with a verified shared product; Both CVSS scores; Calculated score difference; Impact evidence",
+        "RetrievedChunks":  "",
+        "GraphNodes":  "CVE-2026-74691, CVE-2026-87858, CVE-2026-97620, CVE-2026-80819, CVE-2026-46897, enterprise command center framework, enterprise command center framework",
+        "Citations":  "CVE-2026-74691 — https://nvd.nist.gov/vuln/detail/CVE-2026-74691; CVE-2026-87858 — https://nvd.nist.gov/vuln/detail/CVE-2026-87858; CVE-2026-97620 — https://nvd.nist.gov/vuln/detail/CVE-2026-97620; CVE-2026-80819 — https://nvd.nist.gov/vuln/detail/CVE-2026-80819; CVE-2026-46897 — https://nvd.nist.gov/vuln/detail/CVE-2026-46897"
+    },
+    {
+        "ID":  "MH-14",
+        "Question":  "Which affected products are linked to CRITICAL CVEs, and what source evidence supports the association between each vulnerability and its product?",
+        "GeneratedAnswer":  "Based on the provided graph evidence, the affected products linked to CRITICAL CVEs are:\n\n1. Oracle HRMS (UK) product of Oracle E-Business Suite:\n   - CVE-2026-62549: [S2]\n   - CVE-2026-62456: [S5]\n\n   Both CVEs are supported by the same NVD description, which states that \"While the vulnerability is in Oracle HRMS (UK), attacks may significantly impact additional products (scope change)\". This suggests that the vulnerability is not limited to the Oracle HRMS (UK) product, but may also affect other products in the Oracle E-Business Suite.\n\n   There is no explicit mention of the affected product in the NVD description for CVE-2026-45321, which is also a CRITICAL CVE. However, the KEV description states that the vulnerability is in TanStack, and the connected products list includes Oracle HRMS (UK) as one of the affected products.\n\n2. TanStack:\n   - CVE-2026-45321: [S3]\n\n   The KEV description explicitly states that the vulnerability is in TanStack, and the connected products list includes TanStack as one of the affected products.\n\n3. Maravel PHP framework:\n   - CVE-2026-55250: [S4]\n\n   The NVD description states that the vulnerability is in Maravel, a PHP framework oriented towards dependency injection, and that it is prior to version 10.74.0. There is no explicit mention of the affected product in the NVD description.\n\nNote that the affected products for CVE-2026-63978 are not explicitly stated in the graph evidence.",
+        "ReferenceAnswer":  null,
+        "RequiredEvidence":  "CRITICAL CVEs; Affected product relationships; CVSS severity records; Source evidence",
+        "RetrievedChunks":  "",
+        "GraphNodes":  "CVE-2026-63978, CVE-2026-62549, human resources management system, CVE-2026-45321, TanStack, tanstack\\/arktype-adapter, tanstack\\/arktype-adapter, tanstack\\/eslint-plugin-router, tanstack\\/eslint-plugin-router, CVE-2026-55250, CVE-2026-62456, human resources management system",
+        "Citations":  "CVE-2026-63978 — https://nvd.nist.gov/vuln/detail/CVE-2026-63978; CVE-2026-62549 — https://nvd.nist.gov/vuln/detail/CVE-2026-62549; CVE-2026-45321 — https://nvd.nist.gov/vuln/detail/CVE-2026-45321; CVE-2026-55250 — https://nvd.nist.gov/vuln/detail/CVE-2026-55250; CVE-2026-62456 — https://nvd.nist.gov/vuln/detail/CVE-2026-62456"
+    },
+    {
+        "ID":  "MH-15",
+        "Question":  "For a product identified in the graph, what are its associated CVEs, their severity levels, and the source-backed remediation or version guidance available for each?",
+        "GeneratedAnswer":  "Fixed-version verification based on each CVE\u0027s own description:\n\n- CVE-2021-44228: no explicitly confirmed fixed version found in the description. [S1]\n- CVE-2026-0063: no explicitly confirmed fixed version found in the description. [S2]\n- CVE-2026-0064: no explicitly confirmed fixed version found in the description. [S3]\n- CVE-2026-0068: no explicitly confirmed fixed version found in the description. [S4]\n- CVE-2026-0071: no explicitly confirmed fixed version found in the description. [S5]\n\nImportant: \u0027No explicitly confirmed fixed version\u0027 means the description did not confirm one. It does not prove that no fix exists.",
+        "ReferenceAnswer":  null,
+        "RequiredEvidence":  "Selected product; Associated CVEs and severity; Remediation or version guidance; Source evidence or an explicit evidence gap",
+        "RetrievedChunks":  "CVE-2021-44228-desc-1, CVE-2026-0063-desc-1, CVE-2026-0064-desc-1, CVE-2026-0068-desc-1, CVE-2026-0071-desc-1",
+        "GraphNodes":  "CVE-2021-44228, Log4j2, CVE-2026-0063, android, CVE-2026-0064, android, CVE-2026-0068, android, CVE-2026-0071, android",
+        "Citations":  "CVE-2021-44228 — https://nvd.nist.gov/vuln/detail/CVE-2021-44228; CVE-2026-0063 — https://nvd.nist.gov/vuln/detail/CVE-2026-0063; CVE-2026-0064 — https://nvd.nist.gov/vuln/detail/CVE-2026-0064; CVE-2026-0068 — https://nvd.nist.gov/vuln/detail/CVE-2026-0068; CVE-2026-0071 — https://nvd.nist.gov/vuln/detail/CVE-2026-0071"
+    },
+    {
+        "ID":  "MH-16",
+        "Question":  "For a CVE that has a documented MITRE ATT\u0026CK association, which software is affected, which technique is associated with the vulnerability, and what evidence supports both links?",
+        "GeneratedAnswer":  "To answer your question, I\u0027ll need to analyze the graph evidence provided.\n\nThere is one CVE that has a documented MITRE ATT\u0026CK association: CVE-2026-20131.\n\nAccording to the graph evidence, the affected software is Cisco Secure Firewall Management Center (FMC) Software.\n\nThe associated technique is Deserialization of Untrusted Data.\n\nThe evidence supporting both links is the KEV description for CVE-2026-20131:\n\n\"KEV description: Cisco Secure Firewall Management Center (FMC) Software and Cisco Security Cloud Control (SCC) Firewall Management contain a deserialization of untrusted data vulnerability in the web-based management interface that could allow an unauthenticated, remote attacker to execute arbitrary Java code as root on an affected device.\"\n\nNote that the other CVEs do not have documented MITRE ATT\u0026CK associations in the provided graph evidence.",
+        "ReferenceAnswer":  null,
+        "RequiredEvidence":  "CVE-to-software relationship; Verified CVE-to-technique mapping; Evidence supporting each relationship",
+        "RetrievedChunks":  "",
+        "GraphNodes":  "CVE-2026-20242, CVE-2026-20245, Catalyst SD-WAN Manager, catalyst sd-wan manager, sd-wan vsmart controller, catalyst sd-wan manager, sd-wan vsmart controller, CVE-2026-20316, Secure Firewall Management Center (FMC), secure firewall management center, CVE-2026-20009, adaptive security appliance software, CVE-2026-20131, Secure Firewall Management Center (FMC), secure firewall management center, secure firewall management center, secure firewall management center, secure firewall management center",
+        "Citations":  "CVE-2026-20242 — https://nvd.nist.gov/vuln/detail/CVE-2026-20242; CVE-2026-20245 — https://nvd.nist.gov/vuln/detail/CVE-2026-20245; CVE-2026-20316 — https://nvd.nist.gov/vuln/detail/CVE-2026-20316; CVE-2026-20009 — https://nvd.nist.gov/vuln/detail/CVE-2026-20009; CVE-2026-20131 — https://nvd.nist.gov/vuln/detail/CVE-2026-20131"
+    },
+    {
+        "ID":  "MH-17",
+        "Question":  "Which CVEs in our curated ATT\u0026CK mapping set share a technique, what software is affected by each CVE, and what sources support the individual associations?",
+        "GeneratedAnswer":  "Based on the graph evidence provided, here are the answers to the user\u0027s question:\n\n1. Which CVEs in your curated ATT\u0026CK mapping set share a technique?\n\nCVE-2026-80590 and CVE-2026-18413 share a technique. Both CVEs involve a vulnerability in the handling of GSO (Generic Socket Options) metadata, which can lead to a buffer overflow and kernel memory corruption.\n\n2. What software is affected by each CVE?\n\n- CVE-2026-80590: Linux kernel\n- CVE-2026-18413: NXP MCUX LPADC driver (part of the Zephyr operating system)\n\n3. What sources support the individual associations?\n\n- CVE-2026-80590: [S1] (graph evidence from the Linux kernel)\n- CVE-2026-18413: [S1] (graph evidence from the NXP MCUX LPADC driver)\n\nNote that there is no explicit confirmation of fixed versions for CVE-2026-80590 and CVE-2026-18413, as stated in the Python-generated VERSION SUMMARY.",
+        "ReferenceAnswer":  null,
+        "RequiredEvidence":  "Shared verified technique; Multiple CVEs; Affected software for each CVE; Evidence for every mapping",
+        "RetrievedChunks":  "",
+        "GraphNodes":  "CVE-2026-80590, CVE-2026-24772, openproject, CVE-2026-20046, ios xr, CVE-2026-20295, CVE-2026-18413",
+        "Citations":  "CVE-2026-80590 — https://nvd.nist.gov/vuln/detail/CVE-2026-80590; CVE-2026-24772 — https://nvd.nist.gov/vuln/detail/CVE-2026-24772; CVE-2026-20046 — https://nvd.nist.gov/vuln/detail/CVE-2026-20046; CVE-2026-20295 — https://nvd.nist.gov/vuln/detail/CVE-2026-20295; CVE-2026-18413 — https://nvd.nist.gov/vuln/detail/CVE-2026-18413"
+    },
+    {
+        "ID":  "MH-18",
+        "Question":  "For a CVE listed in the CISA Known Exploited Vulnerabilities catalog, what affected software is recorded, what remediation or required action is specified, and what evidence supports the answer?",
+        "GeneratedAnswer":  "Based on the graph evidence, I can provide the following information for the CVEs listed in the CISA Known Exploited Vulnerabilities catalog:\n\n1. CVE-2026-26273:\n   - Affected software: The affected software is \"known\" from the vendor \"withknown\".\n   - Remediation or required action: The fixed version is 1.6.3.\n   - Evidence: The fixed version is explicitly stated in the NVD description [S1].\n\n2. CVE-2026-28507:\n   - Affected software: The affected software is \"known\" from the vendor \"withknown\".\n   - Remediation or required action: The fixed version is 1.6.4.\n   - Evidence: The fixed version is explicitly stated in the NVD description [S2].\n\n3. CVE-2026-28508:\n   - Affected software: The affected software is \"known\" from the vendor \"withknown\".\n   - Remediation or required action: The fixed version is 1.6.4.\n   - Evidence: The fixed version is explicitly stated in the NVD description [S3].\n\nNote that the evidence for the fixed versions is explicitly stated in the NVD descriptions, and there is no indication of any remediation or required action for the affected software.",
+        "ReferenceAnswer":  null,
+        "RequiredEvidence":  "CISA KEV entry; CVE-to-software relationship; Recorded required action or remediation; Source evidence",
+        "RetrievedChunks":  "CVE-2026-26273-desc-1, CVE-2026-28507-desc-1, CVE-2026-28508-desc-1",
+        "GraphNodes":  "CVE-2026-26273, known, CVE-2026-28507, known, CVE-2026-28508, known",
+        "Citations":  "CVE-2026-26273 — https://nvd.nist.gov/vuln/detail/CVE-2026-26273; CVE-2026-28507 — https://nvd.nist.gov/vuln/detail/CVE-2026-28507; CVE-2026-28508 — https://nvd.nist.gov/vuln/detail/CVE-2026-28508"
+    },
+    {
+        "ID":  "MH-19",
+        "Question":  "For a CVE with multiple source documents, do the sources agree on the affected software, vulnerable versions, and security impact? Identify any discrepancies.",
+        "GeneratedAnswer":  "Affected-version ranges from the connected product records:\n- CVE-2026-44182: CVSS 10.0, CRITICAL; affected-version range unavailable in the connected product records. [S1]\n- CVE-2026-27466: CVSS 7.2, HIGH; affected-version range unavailable in the connected product records. [S2]\n- CVE-2026-22028: CVSS 7.2, HIGH; affected-version range unavailable in the connected product records. [S3]\n- CVE-2026-26057: CVSS 6.5, MEDIUM; affected-version range unavailable in the connected product records. [S4]\n- CVE-2026-39309: CVSS 5.5, MEDIUM; affected-version range unavailable in the connected product records. [S5]\n- CVE-2026-61741: CVSS 9.3, CRITICAL; affected-version range unavailable in the connected product records. [S6]\n- CVE-2026-78391: CVSS 8.8, HIGH; affected-version range unavailable in the connected product records. [S7]\n- CVE-2026-34151: CVSS 8.2, HIGH; affected-version range unavailable in the connected product records. [S8]\n- CVE-2026-47749: CVSS 7.8, HIGH; affected-version range unavailable in the connected product records. [S9]\n- CVE-2026-95837: CVSS 7.8, HIGH; affected-version range unavailable in the connected product records. [S10]\n- CVE-2026-24402: CVSS unavailable, Unknown; affected-version range unavailable in the connected product records. [S11]\n- CVE-2025-49704: CVSS unavailable, Unknown; affected-version range unavailable in the connected product records. [S12]\n- CVE-2025-53770: CVSS unavailable, Unknown; affected-version range unavailable in the connected product records. [S13]\n- CVE-2025-49706: CVSS unavailable, Unknown; affected-version range unavailable in the connected product records. [S14]\n- CVE-2026-33451: CVSS 8.5, HIGH; affected-version range unavailable in the connected product records. [S15]\n- CVE-2026-50238: CVSS unavailable, Unknown; affected-version range unavailable in the connected product records. [S16]\n- CVE-2026-83454: CVSS 8.8, HIGH; affected-version range unavailable in the connected product records. [S17]\n- CVE-2026-83452: CVSS 9.8, CRITICAL; affected-version range unavailable in the connected product records. [S18]\n- CVE-2026-0518: CVSS 4.8, MEDIUM; affected-version range unavailable in the connected product records. [S19]\n- CVE-2026-83453: CVSS 7.2, HIGH; affected-version range unavailable in the connected product records. [S20]",
+        "ReferenceAnswer":  null,
+        "RequiredEvidence":  "CVE-to-source relationships; Claims extracted from each source; Version and impact comparison; Evidence for discrepancies",
+        "RetrievedChunks":  "CVE-2026-24402-desc-1, CVE-2025-49704-desc-1, CVE-2025-53770-desc-1, CVE-2025-49706-desc-1, CVE-2026-33451-desc-1, CVE-2026-50238-desc-1, CVE-2026-83454-desc-1, CVE-2026-83452-desc-1, CVE-2026-0518-desc-1, CVE-2026-83453-desc-1",
+        "GraphNodes":  "CVE-2026-44182, enterprise gateway, CVE-2026-27466, bigbluebutton, CVE-2026-22028, preact, CVE-2026-26057, skill scanner, CVE-2026-39309, CVE-2026-61741, CVE-2026-78391, CVE-2026-34151, CVE-2026-47749, stable-diffusion.cpp, CVE-2026-95837, CVE-2026-24402, CVE-2025-49704, SharePoint, CVE-2025-53770, SharePoint, CVE-2025-49706, SharePoint, CVE-2026-33451, secure access, CVE-2026-50238, CVE-2026-83454, document management and collaboration, CVE-2026-83452, document management and collaboration, CVE-2026-0518, secure access, CVE-2026-83453, document management and collaboration",
+        "Citations":  "CVE-2026-44182 — https://nvd.nist.gov/vuln/detail/CVE-2026-44182; CVE-2026-27466 — https://nvd.nist.gov/vuln/detail/CVE-2026-27466; CVE-2026-22028 — https://nvd.nist.gov/vuln/detail/CVE-2026-22028; CVE-2026-26057 — https://nvd.nist.gov/vuln/detail/CVE-2026-26057; CVE-2026-39309 — https://nvd.nist.gov/vuln/detail/CVE-2026-39309; CVE-2026-61741 — https://nvd.nist.gov/vuln/detail/CVE-2026-61741; CVE-2026-78391 — https://nvd.nist.gov/vuln/detail/CVE-2026-78391; CVE-2026-34151 — https://nvd.nist.gov/vuln/detail/CVE-2026-34151; CVE-2026-47749 — https://nvd.nist.gov/vuln/detail/CVE-2026-47749; CVE-2026-95837 — https://nvd.nist.gov/vuln/detail/CVE-2026-95837; CVE-2026-24402 — https://nvd.nist.gov/vuln/detail/CVE-2026-24402; CVE-2025-49704 — https://nvd.nist.gov/vuln/detail/CVE-2025-49704; CVE-2025-53770 — https://nvd.nist.gov/vuln/detail/CVE-2025-53770; CVE-2025-49706 — https://nvd.nist.gov/vuln/detail/CVE-2025-49706; CVE-2026-33451 — https://nvd.nist.gov/vuln/detail/CVE-2026-33451; CVE-2026-50238 — https://nvd.nist.gov/vuln/detail/CVE-2026-50238; CVE-2026-83454 — https://nvd.nist.gov/vuln/detail/CVE-2026-83454; CVE-2026-83452 — https://nvd.nist.gov/vuln/detail/CVE-2026-83452; CVE-2026-0518 — https://nvd.nist.gov/vuln/detail/CVE-2026-0518; CVE-2026-83453 — https://nvd.nist.gov/vuln/detail/CVE-2026-83453"
+    },
+    {
+        "ID":  "MH-20",
+        "Question":  "For a CVE that has an affected-product link but no verified ATT\u0026CK mapping in our graph, what can we establish about the vulnerability, and which conclusions remain unsupported?",
+        "GeneratedAnswer":  "Based on the graph evidence, for a CVE with an affected-product link but no verified ATT\u0026CK mapping, we can establish the following:\n\n1. The vulnerability is present in the affected product, as indicated by the affected-product link.\n2. The vulnerability\u0027s impact and severity cannot be determined, as there is no verified ATT\u0026CK mapping.\n3. The fixed version of the vulnerability, if any, cannot be confirmed, as there is no explicit mention of a fixed version in the graph evidence.\n\nConclusions that remain unsupported include:\n\n1. The specific details of the vulnerability, such as its type, description, and potential exploit vectors.\n2. The severity and impact of the vulnerability, beyond the fact that it is present in the affected product.\n3. The effectiveness of any fixes or patches for the vulnerability, beyond the fact that a fixed version is not explicitly confirmed.",
+        "ReferenceAnswer":  null,
+        "RequiredEvidence":  "Verified affected-product relationship; Version, severity, or impact evidence where available; ATT\u0026CK mapping review status; Explicit uncertainty statement",
+        "RetrievedChunks":  "",
+        "GraphNodes":  "CVE-2026-41574, nhost\\/auth, CVE-2026-67211, opennlp, opennlp, CVE-2026-101042, CVE-2026-72193, CVE-2026-68235",
+        "Citations":  "CVE-2026-41574 — https://nvd.nist.gov/vuln/detail/CVE-2026-41574; CVE-2026-67211 — https://nvd.nist.gov/vuln/detail/CVE-2026-67211; CVE-2026-101042 — https://nvd.nist.gov/vuln/detail/CVE-2026-101042; CVE-2026-72193 — https://nvd.nist.gov/vuln/detail/CVE-2026-72193; CVE-2026-68235 — https://nvd.nist.gov/vuln/detail/CVE-2026-68235"
+    }
+]

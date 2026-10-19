@@ -1,0 +1,33 @@
+Triple Evaluation
+Per-predicate breakdown:
+  affects_product: P=0.001 R=1.000 F1=0.001 (TP=47 FP=73661 FN=0)
+  inferred_risk_level: P=0.000 R=1.000 F1=0.000 (TP=4 FP=71366 FN=0)
+
+result were accurate since it aligned with the probability percentile
+Q&A Evaluation
+order: question  faithfulness  answer_relevancy
+
+Which products are affected by CVE-2026-21428, what affected-version boundary is documented, and what vulnerability behavior explains the risk?      0.750000          0.801537
+                                                                   For CVE-2026-21428, how do the affected software, vulnerable version range, and documented fixed-version boundary fit together?      0.000000          0.804144
+                                                                          Which vulnerabilities in the graph affect cpp-httplib, and how do their affected-version ranges and descriptions differ?      0.000000          0.642676
+                                                          For CVE-2026-0544, which product and version configuration are associated with the vulnerability, and what CVSS information is recorded?      0.000000          0.829867
+                                              Compare CVE-2026-21428 with CVE-2026-0544: which affects which product, which has the higher CVSS score, and how do their documented impacts differ?           NaN          0.694024
+                                                                                    Which vulnerabilities in our graph affect Apache Log4j2, and what evidence connects each CVE to that software?      0.428571          0.873518
+                                                                          For CVE-2021-44228, how does the affected software relate to the recorded CVSS score and the documented security impact?      0.200000          0.703770
+                                                Which affected software is associated with the highest-scoring CVEs in our dataset, and what documented impacts distinguish those vulnerabilities?      0.000000          0.775934
+                                      For a selected HIGH or CRITICAL CVE, which software is affected, what is its CVSS score, and what does the vulnerability description say an attacker can do?           NaN          0.777310
+                                                    Which products have multiple associated CVEs with different severity levels, and what evidence supports each product-CVE-severity combination?           NaN          0.656030
+                For a product associated with several CVEs, which vulnerability has the highest CVSS score, and how does its impact compare with the other vulnerabilities affecting that product?           NaN          0.839255
+                                              Which CVEs share an affected product, and which source-backed facts show that the vulnerabilities are separate issues rather than duplicate records?           NaN          0.805624
+                                                 For two CVEs affecting the same product, which has the higher CVSS score, what is the score difference, and how do the documented impacts differ?           NaN          0.856539
+                                                Which affected products are linked to CRITICAL CVEs, and what source evidence supports the association between each vulnerability and its product?      0.000000          0.874396
+                             For a product identified in the graph, what are its associated CVEs, their severity levels, and the source-backed remediation or version guidance available for each?           NaN          0.676020
+                For a CVE that has a documented MITRE ATT&CK association, which software is affected, which technique is associated with the vulnerability, and what evidence supports both links?           NaN          0.875507
+                                      Which CVEs in our curated ATT&CK mapping set share a technique, what software is affected by each CVE, and what sources support the individual associations?      0.000000          0.708550
+For a CVE listed in the CISA Known Exploited Vulnerabilities catalog, what affected software is recorded, what remediation or required action is specified, and what evidence supports the answer?      0.235294          0.810136
+                                    For a CVE with multiple source documents, do the sources agree on the affected software, vulnerable versions, and security impact? Identify any discrepancies.           NaN               NaN
+                 For a CVE that has an affected-product link but no verified ATT&CK mapping in our graph, what can we establish about the vulnerability, and which conclusions remain unsupported?      0.857143          0.616715
+
+Result:
+faithfulness        0.2246
+answer_relevancy    0.7696
