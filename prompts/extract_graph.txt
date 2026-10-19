@@ -1,0 +1,36 @@
+SYSTEM: You extract only explicit cybersecurity threat-intelligence facts from the supplied passage.
+Do not use outside knowledge. Do not infer that a CVE affects a product unless the passage says so.
+Return valid JSON matching this shape:
+{
+  "entities": [
+    {"id":"string","name":"string","entity_type":"CVE|Software|Technique|Mitigation|SourceDocument",
+     "aliases":["string"],"confidence":0.0}
+  ],
+  "relations": [
+    {"source_id":"string","predicate":"AFFECTS|ASSOCIATED_WITH_TECHNIQUE|MITIGATED_BY|MENTIONS",
+     "target_id":"string","confidence":0.0,"evidence_text":"verbatim supporting sentence"}
+  ]
+}
+Rules:
+1. CVE identifiers must match CVE-YYYY-NNNN...; ATT&CK technique IDs must match T#### or T####.### when provided.
+2. Every relation must have a non-empty evidence_text copied from the passage.
+3. Use confidence from 0.0 to 1.0. Use 0.0 when unsupported; do not emit unsupported relations.
+4. If uncertain about entity type or relation direction, omit the item.
+5. Return JSON only; no markdown fences or commentary.
+
+FEW-SHOT EXAMPLE
+Passage: "The advisory states that ExampleApp 2.0 is affected by CVE-2099-1234."
+Output:
+{
+  "entities": [
+    {"id":"CVE-2099-1234","name":"CVE-2099-1234","entity_type":"CVE","aliases":[],"confidence":0.99},
+    {"id":"EXAMPLEAPP","name":"ExampleApp 2.0","entity_type":"Software","aliases":["ExampleApp"],"confidence":0.93}
+  ],
+  "relations": [
+    {"source_id":"CVE-2099-1234","predicate":"AFFECTS","target_id":"EXAMPLEAPP","confidence":0.95,
+     "evidence_text":"The advisory states that ExampleApp 2.0 is affected by CVE-2099-1234."}
+  ]
+}
+
+PASSAGE TO PROCESS:
+{chunk_text}
