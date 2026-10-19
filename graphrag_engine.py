@@ -17,7 +17,22 @@ def get_embedding_model():
 
     return _embedding_model
 
-
+def resolve_product_name(raw_name: str, session) -> str:
+    # Layer 1: exact match
+    result = session.run(
+        "MATCH (p:Product) WHERE toLower(p.name) = toLower($name) RETURN p.name LIMIT 1",
+        name=raw_name
+    )
+    record = result.single()
+    if record:
+        return record["p.name"]
+    # Layer 2: fuzzy match (rapidfuzz)
+    from rapidfuzz import process
+    all_names = [r["p.name"] for r in session.run("MATCH (p:Product) RETURN p.name")]
+    match, score, _ = process.extractOne(raw_name, all_names)
+    if score >= 90:
+        return match
+    return raw_name  # unresolved
 STOPWORDS = {
     "what", "which", "when", "where", "who", "why", "how",
     "does", "did", "are", "is", "was", "were", "the", "a",
