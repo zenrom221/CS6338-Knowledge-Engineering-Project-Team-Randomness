@@ -1,0 +1,19 @@
+nodeProjection,relationshipProjection,graphName,nodeCount,relationshipCount,projectMillis
+"{
+  Product: {
+    properties: {},
+    label: Product
+  },
+  Vulnerability: {
+    properties: {},
+    label: Vulnerability
+  }
+}","{
+  AFFECTS_PRODUCT: {
+    orientation: UNDIRECTED,
+    aggregation: DEFAULT,
+    type: AFFECTS_PRODUCT,
+    properties: {},
+    indexInverse: FALSE
+  }
+}",cve_product_graph,92137,319012,415
